@@ -3,86 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects – Selman Polat</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Projects — Selman Polat</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <nav>
+        <h1 class="logo">Projects</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
 
-<nav>
-    <h2 class="logo">Selman</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="projects.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-    </ul>
-</nav>
+    <section class="section">
+        <h3>Major Projects</h3>
 
-<header class="hero">
-    <h1>All Projects</h1>
-</header>
+        <div class="project-grid">
+            <div class="project-card">
+                <h4>FRC Robot 2025 (Code)</h4>
+                <p>Robot control code for drivetrain, elevator, and roller intake mechanisms.</p>
+            </div>
 
-<section class="section">
-    <h2>Robotics</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>FRC Robot 2025</h3>
-            <p>Subsystem-based robot code: elevator, coral shooter, and arm.</p>
-            <a href="#" class="btn">GitHub</a>
+            <div class="project-card">
+                <h4>FRC Robot 2024</h4>
+                <p>Full robot code including autonomous routines and subsystem logic.</p>
+            </div>
+
+            <div class="project-card">
+                <h4>AI Fitman Game</h4>
+                <p>AI-powered reaction-training game built using Python + OpenCV.</p>
+            </div>
+
+            <div class="project-card">
+                <h4>Wrestling Scoreboard App</h4>
+                <p>A simple scoring app with clean UI and real-time tracking.</p>
+            </div>
         </div>
 
-        <div class="card">
-            <h3>FRC Robot 2024</h3>
-            <p>Tank drive, intake, autos, and basic AprilTag integration.</p>
-            <a href="#" class="btn">GitHub</a>
-        </div>
-    </div>
+        <h3 class="subsection-title">CAD Projects</h3>
 
-    <h2>CAD Projects</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>CAD Pistons</h3>
-            <p>Mechanical piston assembly with render images.</p>
-            <a href="#" class="btn">GitHub</a>
-        </div>
+        <div class="project-grid">
+            <div class="project-card">
+                <h4>Swerve Module CAD</h4>
+                <p>Custom mechanical design with assembly renderings.</p>
+            </div>
 
-        <div class="card">
-            <h3>CAD Swerve</h3>
-            <p>Design of custom swerve module for robotics applications.</p>
-            <a href="#" class="btn">GitHub</a>
-        </div>
-    </div>
-
-    <h2>Programming</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>MATLAB Physics Sims</h3>
-            <p>Projectile motion, bouncing balls, sin/cos graphs.</p>
-            <a href="#" class="btn">GitHub</a>
+            <div class="project-card">
+                <h4>Piston CAD Assembly</h4>
+                <p>Fully modeled piston system with final renders.</p>
+            </div>
         </div>
 
-        <div class="card">
-            <h3>F1 Analysis</h3>
-            <p>Python FastF1 data analysis & ML predictions.</p>
-            <a href="#" class="btn">GitHub</a>
-        </div>
-    </div>
+        <h3 class="subsection-title">Matlab Physics Simulations</h3>
 
-    <h2>AI & Machine Learning</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>AI Detection Project</h3>
-            <p>Model detecting real vs AI images.</p>
-            <a href="#" class="btn">GitHub</a>
+        <div class="project-grid">
+            <div class="project-card">
+                <h4>Spring-Mass-Damper</h4>
+                <p>Differential equation system + animation.</p>
+            </div>
+            <div class="project-card">
+                <h4>Projectile Motion</h4>
+                <p>Multi-angle projectile plotting + motion trails.</p>
+            </div>
+            <div class="project-card">
+                <h4>Bouncing Balls Simulation</h4>
+                <p>Energy loss, bounce coefficient, and timing delay simulation.</p>
+            </div>
         </div>
-
-        <div class="card">
-            <h3>AI Dataset Study</h3>
-            <p>Exploring patterns in generated vs real datasets.</p>
-            <a href="#" class="btn">GitHub</a>
-        </div>
-    </div>
-</section>
-
+    </section>
 </body>
 </html>
