@@ -1,52 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahmet Selman Polat | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ahmet Polat — Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>Ahmet Selman Polat</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <div class="brand" onclick="location.href='index.html'">
+      <div class="logo">AP</div>
+      <div>
+        <a class="title" href="index.html">Ahmet Polat</a>
+        <div class="subtitle">Home</div>
+      </div>
+    </div>
 
-  <main>
-    <section class="intro">
-      <h2>Hi, I'm Ahmet Polat</h2>
-      <p>High school student focused on robotics, mechanical design, and AI applications.</p>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Hi — I'm <span class="accent">Ahmet Polat</span></h1>
+        <p class="hero-subtitle">
+          High school robotics lead building mechanical systems, control code, and data-driven projects.
+        </p>
+        <div class="meta small">
+          Aspiring Mechanical Engineer • FRC Team Captain
+        </div>
+        <a class="btn hero-btn" href="projects.html">See My Projects</a>
+      </div>
+
+      <div class="hero-right">
+        <div class="info-card">
+          <p><strong>Location:</strong> Toronto, Canada</p>
+          <p><strong>Email:</strong> ahmselpol@gmail.com</p>
+          <p><strong>FRC:</strong> Team Captain</p>
+        </div>
+      </div>
+
+      <div class="scroll-down">⌄</div>
     </section>
 
-    <section class="featured-projects">
-      <h2>Featured Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="images/frc2025.png" alt="FRC Robot 2025">
-          <h3>FRC Robot 2025</h3>
-          <p>Full robot assembly with elevator, tank drive, and advanced mechanisms.</p>
-          <a href="https://github.com/YOUR-USERNAME/frc-code-2025" target="_blank">View on GitHub</a>
+    <!-- ABOUT -->
+    <section class="section">
+      <h2>Who I Am</h2>
+      <p class="small">
+        I design and build robots and systems — from CAD to control. I enjoy solving mechanics problems, tuning control loops, and applying AI to real datasets.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Vision & Goals</h2>
+      <p class="small">
+        Become a leader in engineering architecture and build a company focused on control & performance for mechanical systems.
+      </p>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section">
+      <h2>Experience Timeline</h2>
+      <div class="timeline">
+        <div class="item">
+          <h4>2025 — FRC Robot 2025</h4>
+          <p class="small">Lead developer for elevator, intake, and roller mechanisms.</p>
         </div>
-        <div class="project-card">
-          <img src="images/f1data.png" alt="F1 Data Analysis">
-          <h3>F1 Data Analysis</h3>
-          <p>Python GUI + AI analysis of raw telemetry data for insights and predictions.</p>
-          <a href="https://github.com/YOUR-USERNAME/f1-data-analysis-project" target="_blank">View on GitHub</a>
+        <div class="item">
+          <h4>2024 — F1 Data Analysis</h4>
+          <p class="small">Python analysis, FastF1, and AI prediction experiments.</p>
         </div>
-        <!-- Add more featured projects here -->
+        <div class="item">
+          <h4>2023 — CAD Portfolio</h4>
+          <p class="small">Several practice projects and one original design.</p>
+        </div>
       </div>
     </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section class="section">
+      <h2>Featured Projects</h2>
+      <div class="grid featured-grid">
+        <article class="card">
+          <img src="assets/images/frc9525.png" alt="FRC Robot 2025">
+          <h3>FRC Robot 2025</h3>
+          <p>Elevator + coral shooter + tank drive. Full robot control code and subsystem integration.</p>
+          <div class="actions">
+            <a class="btn" href="projects/frc2025.html">View Project</a>
+            <a class="btn" href="https://github.com/YOUR-USERNAME/frc-code-2025" target="_blank">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/f1data.png" alt="F1 Data">
+          <h3>F1 Data Analysis</h3>
+          <p>GUI + AI predictions for telemetry analysis and simple performance insights.</p>
+          <div class="actions">
+            <a class="btn" href="projects/f1.html">View Project</a>
+            <a class="btn" href="https://github.com/YOUR-USERNAME/f1-data-analysis-project" target="_blank">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/cad-pistons.png" alt="CAD pistons">
+          <h3>CAD Pistons</h3>
+          <p>Parametric piston assembly, renders, and STEP exports.</p>
+          <div class="actions">
+            <a class="btn" href="projects/cad-pistons.html">View Project</a>
+            <a class="btn" href="https://github.com/YOUR-USERNAME/cad-portfolio" target="_blank">Files</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p>© 2025 Ahmet Selman Polat | <a href="about.html">Contact</a></p>
-  </footer>
+  <div class="footer">
+    <div class="left">© Ahmet Polat — 2025</div>
+    <div class="icons">
+      <a class="icon-btn" href="https://github.com/AhmPol" target="_blank" aria-label="GitHub">GH</a>
+      <a class="icon-btn" href="mailto:ahmselpol@gmail.com" aria-label="Email">✉</a>
+      <a class="icon-btn" href="https://www.linkedin.com/in/ahmet-polat-47b202362/" target="_blank" aria-label="LinkedIn">in</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

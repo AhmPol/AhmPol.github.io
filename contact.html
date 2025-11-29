@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Ahmet Polat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="brand" onclick="location.href='index.html'">
+      <div class="logo">AP</div>
+      <div>
+        <a class="title" href="index.html">Ahmet Polat</a>
+        <div class="subtitle">Contact</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a class="active" href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="section">
+      <h2>Contact</h2>
+      <p class="small">Send me a message — I check email frequently.</p>
+
+      <form id="contact-form" class="contact-form">
+        <label for="c-name">Name</label>
+        <input class="input" id="c-name" required placeholder="Your name">
+
+        <label for="c-email">Your Email</label>
+        <input class="input" id="c-email" type="email" required placeholder="you@example.com">
+
+        <label for="c-subject">Subject</label>
+        <input class="input" id="c-subject" placeholder="Project inquiry / collaboration">
+
+        <label for="c-message">Message</label>
+        <textarea id="c-message" class="input" rows="6" placeholder="Write your message..." required></textarea>
+
+        <button class="btn" type="submit">Send Email</button>
+      </form>
+
+      <h3 style="margin-top:18px;">Direct</h3>
+      <p class="small">Email: <a href="mailto:ahmselpol@gmail.com" style="color:var(--accent)">ahmselpol@gmail.com</a></p>
+      <p class="small">LinkedIn: <a href="https://www.linkedin.com/in/ahmet-polat-47b202362/" target="_blank" style="color:var(--accent)">linkedin.com/in/ahmet-polat-47b202362</a></p>
+      <p class="small">GitHub: <a href="https://github.com/YOUR-USERNAME" target="_blank" style="color:var(--accent)">github.com/YOUR-USERNAME</a></p>
+    </section>
+  </main>
+
+  <div class="footer">
+    <div class="left">© Ahmet Polat — 2025</div>
+    <div class="icons">
+      <a class="icon-btn" href="https://github.com/AhmPol" target="_blank">GH</a>
+      <a class="icon-btn" href="mailto:ahmselpol@gmail.com">✉</a>
+      <a class="icon-btn" href="https://www.linkedin.com/in/ahmet-polat-47b202362/" target="_blank">in</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

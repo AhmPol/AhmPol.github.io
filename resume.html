@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume — Ahmet Polat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="brand" onclick="location.href='index.html'">
+      <div class="logo">AP</div>
+      <div>
+        <a class="title" href="index.html">Ahmet Polat</a>
+        <div class="subtitle">Resume</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a class="active" href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="project-page">
+      <h2>Resume</h2>
+      <p class="small">Download or preview my resume below.</p>
+      <!-- If you have resume.pdf in root, load it in iframe -->
+      <iframe class="pdf-frame" src="assets/resume.pdf"></iframe>
+      <div style="margin-top:12px;">
+        <a class="btn" href="assets/resume.pdf" download>Download Resume (PDF)</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer">
+    <div class="left">© Ahmet Polat — 2025</div>
+    <div class="icons">
+      <a class="icon-btn" href="https://github.com/YOUR-USERNAME" target="_blank">GH</a>
+      <a class="icon-btn" href="mailto:ahmselpol@gmail.com">✉</a>
+      <a class="icon-btn" href="https://www.linkedin.com/in/ahmet-polat-47b202362/" target="_blank">in</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

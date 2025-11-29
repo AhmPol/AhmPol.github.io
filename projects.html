@@ -1,76 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Ahmet Selman Polat</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Ahmet Polat</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>Projects</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <div class="brand" onclick="location.href='index.html'">
+      <div class="logo">AP</div>
+      <div>
+        <a class="title" href="index.html">Ahmet Polat</a>
+        <div class="subtitle">Projects</div>
+      </div>
+    </div>
 
-  <main>
-    <section>
-      <h2>Major Projects</h2>
-      <div class="project-grid">
-        <!-- Repeat project cards -->
-        <div class="project-card">
-          <img src="images/frc2025.png" alt="FRC Robot 2025">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="section">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="assets/images/frc9525.png" alt="FRC">
           <h3>FRC Robot 2025</h3>
-          <p>CAD + Full Robot Code + Elevator & Roller mechanisms.</p>
-          <a href="https://github.com/YOUR-USERNAME/frc-code-2025" target="_blank">GitHub</a>
-        </div>
-        <div class="project-card">
-          <img src="images/aidetect.png" alt="AI Detection Project">
-          <h3>AI Detection Project</h3>
-          <p>Python AI project analyzing datasets to detect small vs medium differences.</p>
-          <a href="https://github.com/YOUR-USERNAME/ai-dataset-study" target="_blank">GitHub</a>
-        </div>
-      </div>
-    </section>
+          <p class="small">Elevator + coral shooter + tank drive.</p>
+          <div class="actions">
+            <a class="btn" href="projects/frc2025.html">View Project</a>
+            <a class="btn" href="https://github.com/AhmPol/frc-robot-2025-code/tree/main/code/java/frc/robot" target="_blank">Code</a>
+          </div>
+        </article>
 
-    <section>
-      <h2>Mechanical / CAD Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="images/cad-pistons.png" alt="CAD Pistons">
-          <h3>CAD Pistons</h3>
-          <p>Fusion 360 & Onshape CAD tutorials + original piston assemblies.</p>
-          <a href="https://github.com/YOUR-USERNAME/cad-portfolio" target="_blank">GitHub</a>
-        </div>
-        <div class="project-card">
-          <img src="images/cad-swerve.png" alt="CAD Swerve Module">
-          <h3>CAD Swerve</h3>
-          <p>Swerve drive module design and 3D models.</p>
-          <a href="https://github.com/YOUR-USERNAME/cad-portfolio" target="_blank">GitHub</a>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Software / Data Analysis</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="images/f1data.png" alt="F1 Data Analysis">
+        <article class="card">
+          <img src="assets/images/f1data.png" alt="F1">
           <h3>F1 Data Analysis</h3>
-          <p>Python GUI + plots + AI predictions.</p>
-          <a href="https://github.com/YOUR-USERNAME/f1-data-analysis-project" target="_blank">GitHub</a>
+          <p class="small">FastF1 based analysis & predictions.</p>
+          <div class="actions">
+            <a class="btn" href="projects/f1.html">View Project</a>
+            <a class="btn" href="https://github.com/AhmPol/f1-data-analysis-project" target="_blank">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/aidetect.png" alt="F1">
+          <h3>AI Dataset Study</h3>
+          <p class="small">Analysis of datasets of varying sizes to compare AI model performance, implemented in Python/Jupyter Notebook.</p>
+          <div class="actions">
+            <a class="btn" href="projects/aidatset.html">View Project</a>
+            <a class="btn" href="https://github.com/AhmPol/ai-dataset-size-study" target="_blank">Code</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Original Projects</h2>
+      <div class="category">
+        <div class="cat-header">
+          <h3>Original Projects</h3>
+          <div class="toggle">▾</div>
+        </div>
+        <div class="cat-body">
+          <div class="grid">
+            <div class="card">
+              <img src="assets/images/cad-swerve.png" alt="">
+              <h3>Custom FRC Swerve Base</h3>
+              <p class="small">An original base for swerve drive.</p>
+              <div class="actions"><a class="btn" href="#">View Project</a></div>
+            </div>
+            <div class="card">
+              <img src="assets/images/score.png" alt="">
+              <h3>Wrestling Scoreboard App</h3>
+              <p class="small">An app made for keeping track of wrestling scores.</p>
+              <div class="actions">
+                <a class="btn" href="#">View Project</a>
+                <a class="btn" href="https://github.com/AhmPol/wrestling-scoreboard-app/blob/main/v2_wrestling.py" target="_blank">Code</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div class="category">
+        <div class="cat-header">
+          <h3>Tutorial/Practice CAD</h3>
+          <div class="toggle">▾</div>
+        </div>
+        <div class="cat-body">
+          <div class="grid">
+            <div class="card">
+              <img src="assets/images/cad-pistons.png" alt="">
+              <h3>Basic Piston Part</h3>
+              <p class="small">Piston CAD practice.</p>
+              <div class="actions"><a class="btn" href="#">View Project</a></div>
+            </div>
+
+            <div class="card">
+              <img src="assets/images/formula-chassis-iso.png" alt="">
+              <h3>Formula Chassis</h3>
+              <p class="small">Formula Chassis CAD practice.</p>
+              <div class="actions"><a class="btn" href="#">View Project</a></div>
+            </div>
+
+            <div class="card">
+              <img src="assets/images/car-model-iso.png" alt="">
+              <h3>Car Model</h3>
+              <p class="small">Car CAD practice.</p>
+              <div class="actions"><a class="btn" href="#">View Project</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="cat-header">
+          <h3>Tutorial/Practice Codes</h3>
+          <div class="toggle">▾</div>
+        </div>
+        <div class="cat-body">
+          <div class="grid">
+            <div class="card">
+              <img src="assets/images/spring_animation.gif" alt="">
+              <h3>MATLAB: Spring</h3>
+              <p class="small">Spring-mass simulation, GIF included.</p>
+              <div class="actions">
+                <a class="btn" href="#">View Project</a>
+                <a class="btn" href="https://github.com/AhmPol/matlab-simulation-portfolio/tree/main/basics/spring" target="_blank">Code</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="assets/images/projectile_animation.gif" alt="">
+              <h3>MATLAB: Projectile</h3>
+              <p class="small">Projectile simulation, GIF included.</p>
+              <div class="actions">
+                <a class="btn" href="#">View Project</a>
+                <a class="btn" href="https://github.com/AhmPol/matlab-simulation-portfolio/tree/main/basics/projectile" target="_blank">Code</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="assets/images/bounceball_animation.gif" alt="">
+              <h3>MATLAB: Bounceball</h3>
+              <p class="small">Bounceball simulation, GIF included.</p>
+              <div class="actions">
+                <a class="btn" href="#">View Project</a>
+                <a class="btn" href="https://github.com/AhmPol/matlab-simulation-portfolio/tree/main/basics/bounceball" target="_blank">Code</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="assets/images/sincos.png" alt="">
+              <h3>MATLAB: Sincos</h3>
+              <p class="small">Sincos simulation, GIF included.</p>
+              <div class="actions">
+                <a class="btn" href="#">View Project</a>
+                <a class="btn" href="https://github.com/AhmPol/matlab-simulation-portfolio/tree/main/basics/sincos" target="_blank">Code</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Ahmet Selman Polat | <a href="about.html">Contact</a></p>
-  </footer>
+  <div class="footer">
+    <div class="left">© Ahmet Polat — 2025</div>
+    <div class="icons">
+      <a class="icon-btn" href="https://github.com/AhmPol" target="_blank">GH</a>
+      <a class="icon-btn" href="mailto:ahmselpol@gmail.com">✉</a>
+      <a class="icon-btn" href="https://www.linkedin.com/in/ahmet-polat-47b202362/" target="_blank">in</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
